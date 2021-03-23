@@ -1,9 +1,9 @@
 # Project-13
 Automated ELK Stack Deployment - Azure
-
+# Spencer Tuttrup
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
+The files in this repository were used to configure the network depicted below. The diagram lays out the process of the ELK configuration.
 
 ![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
 
@@ -24,8 +24,13 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly stable, in addition to restricting traffic to the network.
+
+  - What aspect of security do load balancers protect?
+    Load balancers help defend against (DDos) attacks by having multiple paths and backups of the same servers. An advantage of using load balancers is the ability to remove unhealthy or broken servers from the pool until they are restored.
+
+  - What is the advantage of a jump box?
+    The Jump Box allows all administrators and users to access devices in a separate security zone. This allows us to control the access between devices.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
 - _TODO: What does Filebeat watch for?_
