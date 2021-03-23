@@ -47,7 +47,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Web-3       | Client   | 10.0.0.7   | Linux            |
 | ELK-SERVER  | Gateway  | 10.1.0.4   | Linux            |
 
-Images/Network Interfaces.png
+![Network Interfaces Azure](Images/Network_Interfaces.png)
 
 ### Access Policies
 
