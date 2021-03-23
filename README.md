@@ -1,4 +1,5 @@
 # Project-13
+Automated ELK Stack Deployment - Azure
 
 ## Automated ELK Stack Deployment
 
@@ -42,7 +43,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 ### Access Policies
 
-The machines on the internal network are not exposed to the public Internet. 
+The machines on the internal network are not exposed to the public Internet.
 
 Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
@@ -83,7 +84,7 @@ These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 
 ### Using the Playbook
-In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
 - Copy the _____ file to _____.
