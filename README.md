@@ -27,10 +27,10 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly stable, in addition to restricting traffic to the network.
 
   - What aspect of security do load balancers protect?
-    Load balancers help defend against (DDos) attacks by having multiple paths and backups of the same servers. An advantage of using load balancers is the ability to remove unhealthy or broken servers from the pool until they are restored.
+      - Load balancers help defend against (DDos) attacks by having multiple paths and backups of the same servers. An advantage of using load balancers is the ability to remove unhealthy or broken servers from the pool until they are restored.
 
   - What is the advantage of a jump box?
-    The Jump Box allows all administrators and users to access devices in a separate security zone. This allows us to control the access between devices.
+      - The Jump Box allows all administrators and users to access devices in a separate   security zone. This allows us to control the access between devices.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
 - _TODO: What does Filebeat watch for?_
@@ -61,6 +61,7 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
+|          |                     |                      |
 |          |                     |                      |
 |          |                     |                      |
 
