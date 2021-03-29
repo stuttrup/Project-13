@@ -1,0 +1,136 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green255\blue0;\red0\green0\blue0;\red47\green231\blue26;
+\red74\green0\blue255;\red252\green33\blue24;\red46\green174\blue187;}
+{\*\expandedcolortbl;;\cspthree\c0\c100000\c1813;\cspthree\c0\c0\c0;\cssrgb\c17864\c90514\c12812;
+\cssrgb\c36733\c20486\c100000;\cssrgb\c100000\c23178\c11601;\cssrgb\c20198\c73241\c78251;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \CocoaLigature0 Last login: Mon Mar 29 15:23:40 on ttys001\
+Spencers-MacBook-Pro:~ spencertuttrup$ ssh RedAdmin@40.122.205.61\
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.4.0-1041-azure x86_64)\
+\
+ * Documentation:  https://help.ubuntu.com\
+ * Management:     https://landscape.canonical.com\
+ * Support:        https://ubuntu.com/advantage\
+\
+  System information as of Mon Mar 29 04:10:40 UTC 2021\
+\
+  System load:  0.08               Processes:              117\
+  Usage of /:   10.5% of 28.90GB   Users logged in:        0\
+  Memory usage: 32%                IP address for eth0:    10.0.0.4\
+  Swap usage:   0%                 IP address for docker0: 172.17.0.1\
+\
+ * Introducing self-healing high availability clusters in MicroK8s.\
+   Simple, hardened, Kubernetes for production, from RaspberryPi to DC.\
+\
+     https://microk8s.io/high-availability\
+\
+ * Canonical Livepatch is available for installation.\
+   - Reduce system reboots and improve kernel security. Activate at:\
+     https://ubuntu.com/livepatch\
+\
+24 packages can be updated.\
+0 of these updates are security updates.\
+To see these additional updates run: apt list --upgradable\
+\
+New release '20.04.2 LTS' available.\
+Run 'do-release-upgrade' to upgrade to it.\
+\
+\
+*** System restart required ***\
+Last login: Sun Mar 28 21:41:02 2021 from 210.7.19.29\
+
+\f1\b \cf4 RedAdmin@Jump-Box-Provisioner
+\f0\b0 \cf2 :
+\f1\b \cf5 ~
+\f0\b0 \cf2 $ ls\
+
+\f1\b \cf4 RedAdmin@Jump-Box-Provisioner
+\f0\b0 \cf2 :
+\f1\b \cf5 ~
+\f0\b0 \cf2 $ sudo docker ps\
+CONTAINER ID        IMAGE                           COMMAND             CREATED             STATUS              PORTS               NAMES\
+d2045f0f4b03        cyberxsecurity/ansible:latest   "bash"              2 weeks ago         Up 6 hours                              sharp_wilbur\
+
+\f1\b \cf4 RedAdmin@Jump-Box-Provisioner
+\f0\b0 \cf2 :
+\f1\b \cf5 ~
+\f0\b0 \cf2 $ sudo docker start sharp_wilbur\
+sharp_wilbur\
+
+\f1\b \cf4 RedAdmin@Jump-Box-Provisioner
+\f0\b0 \cf2 :
+\f1\b \cf5 ~
+\f0\b0 \cf2 $ sudo docker attach sharp_wilbur\
+root@d2045f0f4b03:~# cd etc/ansible/\
+bash: cd: etc/ansible/: No such file or directory\
+root@d2045f0f4b03:~# ls\
+root@d2045f0f4b03:~# cd /etc/ansible\
+root@d2045f0f4b03:/etc/ansible# ls\
+ansible.cfg               filebeat-playbook.yml  hosts            pentest.yml\
+
+\f1\b \cf6 filebeat-7.6.1-amd64.deb
+\f0\b0 \cf2   
+\f1\b \cf5 files
+\f0\b0 \cf2                   install-elk.yml  
+\f1\b \cf5 roles
+\f0\b0 \cf2 \
+root@d2045f0f4b03:/etc/ansible# ansible_playbook install-elk.yml \
+bash: ansible_playbook: command not found\
+root@d2045f0f4b03:/etc/ansible# ansible_playbook install filebeat-playbook.yml \
+bash: ansible_playbook: command not found\
+root@d2045f0f4b03:/etc/ansible# ls\
+ansible.cfg               filebeat-playbook.yml  hosts            pentest.yml\
+
+\f1\b \cf6 filebeat-7.6.1-amd64.deb
+\f0\b0 \cf2   
+\f1\b \cf5 files
+\f0\b0 \cf2                   install-elk.yml  
+\f1\b \cf5 roles
+\f0\b0 \cf2 \
+root@d2045f0f4b03:/etc/ansible# sudo ansible_playbook install filebeat-playbook.yml\
+bash: sudo: command not found\
+root@d2045f0f4b03:/etc/ansible# ls\
+ansible.cfg               filebeat-playbook.yml  hosts            pentest.yml\
+
+\f1\b \cf6 filebeat-7.6.1-amd64.deb
+\f0\b0 \cf2   
+\f1\b \cf5 files
+\f0\b0 \cf2                   install-elk.yml  
+\f1\b \cf5 roles
+\f0\b0 \cf2 \
+root@d2045f0f4b03:/etc/ansible# nano install-elk.yml \
+root@d2045f0f4b03:/etc/ansible# nano install-elk.yml \
+root@d2045f0f4b03:/etc/ansible# ls\
+ansible.cfg               filebeat-playbook.yml  hosts            pentest.yml\
+
+\f1\b \cf6 filebeat-7.6.1-amd64.deb
+\f0\b0 \cf2   
+\f1\b \cf5 files
+\f0\b0 \cf2                   install-elk.yml  
+\f1\b \cf5 roles
+\f0\b0 \cf2 \
+root@d2045f0f4b03:/etc/ansible# nano ansible.cfg \
+root@d2045f0f4b03:/etc/ansible# nano install-elk.yml \
+\
+\cf3 \cb2   GNU nano 2.9.3                     install-elk.yml                                \cf2 \cb3 \
+\
+        restart_policy: always\
+        published_ports:\
+          - 5601:5601\
+          - 9200:9200\
+          - 5044:5044\
+\
+\cf7       # Use systemd module\cf2 \
+    - name: Enable service docker on boot\
+      systemd:\
+        name: docker\
+        enabled: yes\
+\
+\
+\
+\
+\
+}
