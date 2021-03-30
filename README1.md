@@ -64,8 +64,10 @@ Only the Jump-Box machine can accept connections from the Internet. Access to th
 - `40.122.205.61`
 
 Machines within the network can only be accessed by SSH from the terminal. There is no pretty "GUI" such as windows.
-  - Which machine has access your ELK VM? What was its IP address?
-      - The Jump-box machine is the only machine with access to the ELK VM. The individual ip of this machine is 10.2.0.4.
+<dl>
+  <dt>:question:Which machine has access your ELK VM? What was its IP address?</dt>
+  <dd>The Jump-box machine is the only machine with access to the ELK VM. The individual ip of this machine is 10.2.0.4.</dd>
+</dl>
 
 A summary of the access policies in place can be found in the table below.
 
@@ -109,10 +111,10 @@ The following screenshot displays the result of running `docker ps` after succes
 ### Target Machines & Beats
 <dl>
   <dt>This ELK server is configured to monitor the following machines:</dt>
-  <dd>`Web-1: 10.0.0.5`>
-  <dd>`Web-2: 10.0.0.6`>
-  <dd>`Web-3: 10.0.0.7`</dd>
-  <dd>`ELK-SERVER: 10.1.0.4`</dd>
+  <dd>Web-1: 10.0.0.5<dd>
+  <dd>Web-2: 10.0.0.6<dd>
+  <dd>Web-3: 10.0.0.7</dd>
+  <dd>ELK-SERVER: 10.1.0.4</dd>
 </dl>
 
 :exclamation:*Note*:exclamation: Upon opening these for the first time, make sure you run sudo RedAdmin@10.0.0.5 [5,6,7] or [10.1.0.4] to ensure connection. Say "YES" for allow.*
