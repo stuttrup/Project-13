@@ -106,13 +106,13 @@ The following screenshot displays the result of running `docker ps` after succes
 ### Target Machines & Beats
 <dl>
   <dt>This ELK server is configured to monitor the following machines:</dt>
-  <dd>Web-1: 10.0.0.5>
-  <dd>Web-2: 10.0.0.6>
-  <dd>Web-3: 10.0.0.7</dd>
-  <dd>ELK-SERVER: 10.1.0.4</dd>
+  <dd>`Web-1: 10.0.0.5`>
+  <dd>`Web-2: 10.0.0.6`>
+  <dd>`Web-3: 10.0.0.7`</dd>
+  <dd>`ELK-SERVER: 10.1.0.4`</dd>
 </dl>
 
-:large_orange_diamond:*Note: Upon opening these for the first time, make sure you run sudo RedAdmin@10.0.0.5 [5,6,7] or [10.1.0.4] to ensure connection. Say "YES" for allow.*:large_orange_diamond:
+:exclamation:*Note:exclamation: Upon opening these for the first time, make sure you run sudo RedAdmin@10.0.0.5 [5,6,7] or [10.1.0.4] to ensure connection. Say "YES" for allow.*
 
 <dl>
   <dt>We have installed the following Beats on these machines:</dt>
@@ -132,11 +132,11 @@ SSH into the control node and follow the steps below:
  - 3: Run the playbook, and navigate to 10.0.0.5 [5 or 6 or 7] to check that the installation worked as expected.
 
 <dl>
-  <dt>Q:  Which file is the playbook? Where do you copy it? </dt>
+  <dt>:question:  Which file is the playbook? Where do you copy it? </dt>
   <dd>Ansible-playbook.yml is the playbook and can be found @ /etc/ansible.</dd>
-  <dt>Q:  Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? </dt>
+  <dt>:question:  Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? </dt>
   <dd>The specified machine checks the hosts file and the individual IP. This can be specified by choosing the correct machine which would be the ELK-Server with an IP of 10.2.0.4 and Nano'ing into the Ansible playbook. </dd>
-  <dt>Q:  Which URL do you navigate to in order to check that the ELK server is running?</dt>
+  <dt>:question:  Which URL do you navigate to in order to check that the ELK server is running?</dt>
   <dd>http://40.85.149.41:5601 - This IP should be the same one from the table of "JUMP BOX" From above.</dd>
 </dl>
 
