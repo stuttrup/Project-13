@@ -118,9 +118,16 @@ This ELK server is configured to monitor the following machines:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
-- Copy the playbook file to etc/ansible.
-- Update the hosts file to include the appropriate IP address.
-- Run the playbook, and navigate to 10.0.0.5 [5 or 6 or 7] to check that the installation worked as expected.
+- 1. Copy the playbook file to etc/ansible.
+- 2. Update the hosts file to include the appropriate IP address.
+- 3. Run the playbook, and navigate to 10.0.0.5 [5 or 6 or 7] to check that the installation worked as expected.
+
+<dl>
+  <dt>Q:  Which file is the playbook? Where do you copy it? </dt>
+  <dd>A:  Ansible-playbook.yml is the playbook and can be found @ /etc/ansible. It is not found here: [Wrong Playbooks](Linux/wrong_playbooks.mp3) </dd>
+  <dt>Q:  Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? </dt>
+  <dd>A:  The specified machine checks the hosts file and the individual IP. This can be specified by choosing the correct machine which would be the ELK-Server with an IP of 10.2.0.4 and Nano'ing into the Ansible playbook. </dd>
+</dl>
 
 Q: Which file is the playbook? Where do you copy it?
  - Ansible-playbook.yml is the playbook and can be found @ /etc/ansible. It is not found here: [Wrong Playbooks](Linux/wrong_playbooks.mp3)
