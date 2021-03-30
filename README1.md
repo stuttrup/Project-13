@@ -88,10 +88,10 @@ The playbook implements the following tasks:
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 A few quick commands to run to gain access and test your container starting from scratch in the terminal [MAC] We are assuming the user RedAdmin.
--1 : ssh RedAdmin@40.122.205.61 - for where I have [40.122.205.61] you are to replace with your instance IP.
--2 : sudo docker container list -a - this checks the containers. Note you only want 1 container.
--3 : sudo docker start sharp_wilbur - this starts the container. Your container WILL have a different name.
--4 : sudo docker attach sharp_wilbur - Attaches started container.
+- 1 : ssh RedAdmin@40.122.205.61 - for where I have [40.122.205.61] you are to replace with your instance IP.
+- 2 : sudo docker container list -a - this checks the containers. Note you only want 1 container.
+- 3 : sudo docker start sharp_wilbur - this starts the container. Your container WILL have a different name.
+- 4 : sudo docker attach sharp_wilbur - Attaches started container.
 
    -Welcome to Root@ random_numbers_here
 
