@@ -27,17 +27,20 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly stable, in addition to restricting traffic to the network.
 
-  - What aspect of security do load balancers protect?
-      - Load balancers help defend against (DDos) attacks by having multiple paths and backups of the same servers. An advantage of using load balancers is the ability to remove unhealthy or broken servers from the pool until they are restored.
-
-  - What is the advantage of a jump box?
-      - The Jump Box allows all administrators and users to access devices in a separate security zone. This allows us to control the access between devices.
+<dl>
+  <dt>:question:What aspect of security do load balancers protect?</dt>
+  <dd>Load balancers help defend against (DDos) attacks by having multiple paths and backups of the same servers. An advantage of using load balancers is the ability to remove unhealthy or broken servers from the pool until they are restored.</dd>
+  <dt>:question:  What is the advantage of a jump box?</dt>
+  <dd>The Jump Box allows all administrators and users to access devices in a separate security zone. This allows us to control the access between devices.</dd>
+</dl>
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log and system files.
-  - What does Filebeat watch for?
-      - Filebeat watches for log files and or separate locations you specify. 
-  - What does Metricbeat record?
-      - Metricbeat takes the recorded items such as metrics and stats and sends them to the specified output.
+<dl>
+  <dt>:question:What does Filebeat watch for?</dt>
+  <dd>Filebeat watches for log files and or separate locations you specify.</dd>
+  <dt>:question:What does Metricbeat record?</dt>
+  <dd>Metricbeat takes the recorded items such as metrics and stats and sends them to the specified output.</dd>
+</dl>
 
 The configuration details of each machine may be found below:
 
@@ -112,7 +115,7 @@ The following screenshot displays the result of running `docker ps` after succes
   <dd>`ELK-SERVER: 10.1.0.4`</dd>
 </dl>
 
-:exclamation:*Note:exclamation: Upon opening these for the first time, make sure you run sudo RedAdmin@10.0.0.5 [5,6,7] or [10.1.0.4] to ensure connection. Say "YES" for allow.*
+:exclamation:*Note*:exclamation: Upon opening these for the first time, make sure you run sudo RedAdmin@10.0.0.5 [5,6,7] or [10.1.0.4] to ensure connection. Say "YES" for allow.*
 
 <dl>
   <dt>We have installed the following Beats on these machines:</dt>
