@@ -133,7 +133,7 @@ Q: Which URL do you navigate to in order to check that the ELK server is running
 
 ### What if I don't live at a permanent IP and travel around frequently? 
 
-![Picture of working at airport](Images/Configure_anywhere.png)
+![Picture of working at airport](Images/Configure_anywheree.png)
 
 Have no fear, the containers and IP's are easy to change around and can be done with your machines already configured. Over the past week I have changed locations, states and even countries and still have successful Ansible/Azure access. 
 
