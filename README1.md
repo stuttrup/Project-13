@@ -142,6 +142,6 @@ Here are the steps to EASILY change around your IP.
 - 2: Navigate to "Network Security Groups" 
 - 3: On the right hand side of those groups, you should see your previously configured IP's containing the ones to your old network.
 - 4: Figure out the new IP of the location you are at. I use ipchicken.com. There is a screenshot below of my IP. Just kidding it's [Public hotel wifi I am at] go ahead hack me away.
-- 5: Click on the name of the Inbound Security rule that has the old IP. [:grinning:](Images/localip)
+- 5: Click on the name of the Inbound Security rule that has the old IP. [:grinning:](Images/localip.png)
 
 
