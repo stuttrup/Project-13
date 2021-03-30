@@ -5,7 +5,7 @@ Automated ELK Stack Deployment - Azure
 
 The files in this repository were used to configure the network depicted below. The diagram lays out the process of the ELK configuration.
 
-![Network Diagram](Images/networkdiagram.png)
+![Network Diagram](Diagram/networkdiagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -87,15 +87,15 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-   - A few quick commands to run to gain access and test your container starting from scratch in the terminal [MAC] We are assuming the user RedAdmin.
-- 1 : ssh RedAdmin@40.122.205.61 - for where I have [40.122.205.61] you are to replace with your instance IP.
-- 2 : sudo docker container list -a - this checks the containers. Note you only want 1 container.
-- 3 : sudo docker start sharp_wilbur - this starts the container. Your container WILL have a different name.
-- 4 : sudo docker attach sharp_wilbur - Attaches started container.
+A few quick commands to run to gain access and test your container starting from scratch in the terminal [MAC] We are assuming the user RedAdmin.
+-1 : ssh RedAdmin@40.122.205.61 - for where I have [40.122.205.61] you are to replace with your instance IP.
+-2 : sudo docker container list -a - this checks the containers. Note you only want 1 container.
+-3 : sudo docker start sharp_wilbur - this starts the container. Your container WILL have a different name.
+-4 : sudo docker attach sharp_wilbur - Attaches started container.
 
-   - Welcome to Root@ random_numbers_here
+   -Welcome to Root@ random_numbers_here
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![Docker PS example](Images/sudo_docker_ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -139,7 +139,7 @@ Here are the steps to EASILY change around your IP.
 - 1: In your Azure, navigate to the home page and make sure your machines are started.
 - 2: Navigate to "Network Security Groups" 
 - 3: On the right hand side of those groups, you should see your previously configured IP's containing the ones to your old network.
-- 4. Figure out the new IP of the location you are at. I use ipchicken.com. There is a screenshot below of my IP. Just kidding it's [Public hotel wifi I am at] go ahead hack me away.
-- 5. Click on the name of the Inbound Security rule that has the old IP. 
+- 4: Figure out the new IP of the location you are at. I use ipchicken.com. There is a screenshot below of my IP. Just kidding it's [Public hotel wifi I am at] go ahead hack me away.
+- 5: Click on the name of the Inbound Security rule that has the old IP. 
 
 
