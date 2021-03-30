@@ -7,9 +7,9 @@ The files in this repository were used to configure the network depicted below. 
 
 ![Network Diagram](Diagram/networkdiagram.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat. Below is an image on how the playbook files should layout in your terminal.
 
-  - _TODO: Enter the playbook file._
+  - [Playbooks Layout in Terminal](Ansible/allyml.png)
 
 This document contains the following details:
 - Description of the Topologu
@@ -55,7 +55,7 @@ The configuration details of each machine may be found below:
 The machines on the internal network are not exposed to the public Internet.
 
 Only the Jump-Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 40.122.205.61
+- `40.122.205.61`
 
 Machines within the network can only be accessed by SSH from the terminal. There is no pretty "GUI" such as windows.
   - Which machine has access your ELK VM? What was its IP address?
@@ -74,8 +74,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-  - What is the main advantage of automating configuration with Ansible?
-      - Automation in Ansible allows IT administrators the ability to eliminate the redundancy in daily tasks. 
+  - Automation in Ansible allows IT administrators the ability to eliminate the redundancy in daily tasks.
 
 The playbook implements the following tasks:
 - Step 1 : Install Docker
@@ -85,17 +84,19 @@ The playbook implements the following tasks:
 - Step 5 : Downloads and installs ELK container
 - Step 6 : Enables Docker on boot to eliminate issues with connection to Kibana
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
 A few quick commands to run to gain access and test your container starting from scratch in the terminal [MAC] We are assuming the user RedAdmin.
 - 1 : ssh RedAdmin@40.122.205.61 - for where I have [40.122.205.61] you are to replace with your instance IP.
 - 2 : sudo docker container list -a - this checks the containers. Note you only want 1 container.
 - 3 : sudo docker start sharp_wilbur - this starts the container. Your container WILL have a different name.
 - 4 : sudo docker attach sharp_wilbur - Attaches started container.
 
-   -Welcome to Root@ random_numbers_here
+   - :white_check_mark: *Welcome to Root@ random_numbers_here* :white_check_mark:
+
+The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![Docker PS example](Images/sudo_docker_ps.png)
+
+---
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
