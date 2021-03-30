@@ -98,6 +98,13 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ---
 
+<dl>
+  <dt>Lower cost</dt>
+  <dd>The new version of this product costs significantly less than the previous one!</dd>
+  <dt>Easier to use</dt>
+  <dd>We've changed the product so that it's much easier to use!</dd>
+</dl>
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 -Web-1: 10.0.0.5
