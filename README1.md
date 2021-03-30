@@ -124,19 +124,14 @@ SSH into the control node and follow the steps below:
 
 <dl>
   <dt>Q:  Which file is the playbook? Where do you copy it? </dt>
-  <dd>A:  Ansible-playbook.yml is the playbook and can be found @ /etc/ansible. It is not found here: [Wrong Playbooks](Linux/wrong_playbooks.mp3) </dd>
+  <dd>Ansible-playbook.yml is the playbook and can be found @ /etc/ansible. It is not found here: [Wrong Playbooks](Linux/wrong_playbooks.mp3) </dd>
   <dt>Q:  Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? </dt>
-  <dd>A:  The specified machine checks the hosts file and the individual IP. This can be specified by choosing the correct machine which would be the ELK-Server with an IP of 10.2.0.4 and Nano'ing into the Ansible playbook. </dd>
+  <dd>The specified machine checks the hosts file and the individual IP. This can be specified by choosing the correct machine which would be the ELK-Server with an IP of 10.2.0.4 and Nano'ing into the Ansible playbook. </dd>
+  <dt>Q:  Which URL do you navigate to in order to check that the ELK server is running?</dt>
+  <dd>http://40.85.149.41:5601 - This IP should be the same one from the table of "JUMP BOX" From above.</dd>
 </dl>
 
-Q: Which file is the playbook? Where do you copy it?
- - Ansible-playbook.yml is the playbook and can be found @ /etc/ansible. It is not found here: [Wrong Playbooks](Linux/wrong_playbooks.mp3)
-
-Q: Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
- - The specified machine checks the hosts file and the individual IP. This can be specified by choosing the correct machine which would be the ELK-Server with an IP of 10.2.0.4 and Nano'ing into the Ansible playbook.
-
-Q: Which URL do you navigate to in order to check that the ELK server is running?
- - http://40.85.149.41:5601 - This IP should be the same one from the table of "JUMP BOX" From above.
+---
 
 ### What if I don't live at a permanent IP and travel around frequently? 
 
