@@ -99,13 +99,15 @@ The following screenshot displays the result of running `docker ps` after succes
 ---
 
 ### Target Machines & Beats
-This ELK server is configured to monitor the following machines:
-- Web-1: 10.0.0.5
-- Web-2: 10.0.0.6
-- Web-3: 10.0.0.7
-- ELK-SERVER: 10.1.0.4
+<dl>
+  <dt>This ELK server is configured to monitor the following machines:</dt>
+  <dd>Web-1: 10.0.0.5>
+  <dd>Web-2: 10.0.0.6>
+  <dd>Web-3: 10.0.0.7</dd>
+  <dd>ELK-SERVER: 10.1.0.4</dd>
+</dl>
 
-   - Note: Upon opening these for the first time, make sure you run sudo RedAdmin@10.0.0.5 [5,6,7] or [10.1.0.4] to ensure connection. Say "YES" for allow.
+*Note: Upon opening these for the first time, make sure you run sudo RedAdmin@10.0.0.5 [5,6,7] or [10.1.0.4] to ensure connection. Say "YES" for allow.*
 
 <dl>
   <dt>We have installed the following Beats on these machines:</dt>
@@ -118,9 +120,9 @@ This ELK server is configured to monitor the following machines:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
-- 1. Copy the playbook file to etc/ansible.
-- 2. Update the hosts file to include the appropriate IP address.
-- 3. Run the playbook, and navigate to 10.0.0.5 [5 or 6 or 7] to check that the installation worked as expected.
+ - 1: Copy the playbook file to etc/ansible.
+ - 2: Update the hosts file to include the appropriate IP address.
+ - 3: Run the playbook, and navigate to 10.0.0.5 [5 or 6 or 7] to check that the installation worked as expected.
 
 <dl>
   <dt>Q:  Which file is the playbook? Where do you copy it? </dt>
@@ -137,9 +139,9 @@ SSH into the control node and follow the steps below:
 
 ![Picture of working at airport](Images/Configure_anywheree.png)
 
-Have no fear, the containers and IP's are easy to change around and can be done with your machines already configured. Over the past week I have changed locations, states and even countries and still have successful Ansible/Azure access. 
+**Have no fear!** The containers and IP's are easy to change around and can be done with your machines already configured. Over the past week I have changed locations, states and even countries and still have successful Ansible/Azure access. 
 
-Here are the steps to EASILY change around your IP.
+Here are the steps to **EASILY** change around your IP.
 - 1: In your Azure, navigate to the home page and make sure your machines are started.
 - 2: Navigate to "Network Security Groups" 
 - 3: On the right hand side of those groups, you should see your previously configured IP's containing the ones to your old network.
