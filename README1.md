@@ -1,7 +1,6 @@
 # Project-13
 Automated ELK Stack Deployment - Azure
-# [Spencer Tuttrup](Linux/wrong_playbooks.mp3) 
-<a href="www.stuttrup.com" title="Spencer Tuttrup">About Me</a>
+# [Spencer Tuttrup](https://www.stuttrup.com) 
 ## *Automated ELK Stack Deployment*
 
 The files in this repository were used to configure the network depicted below. The diagram lays out the process of the ELK configuration.
