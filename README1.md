@@ -1,7 +1,7 @@
 # Project-13
 Automated ELK Stack Deployment - Azure
-# Spencer Tuttrup
-## Automated ELK Stack Deployment
+# [Spencer Tuttrup](Linux/wrong_playbooks.mp3)
+## *Automated ELK Stack Deployment*
 
 The files in this repository were used to configure the network depicted below. The diagram lays out the process of the ELK configuration.
 
@@ -19,6 +19,7 @@ This document contains the following details:
   - Machines Being Monitored
 - How to Use the Ansible Build
 
+---
 
 ### Description of the Topology
 
@@ -50,6 +51,8 @@ The configuration details of each machine may be found below:
 
 [Network Interfaces Azure](Images/Network_Interfaces.png)
 
+---
+
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet.
@@ -70,6 +73,8 @@ A summary of the access policies in place can be found in the table below.
 | Web 2      | No                  | 10.0.0.1-254         |
 | Web 3      | No                  | 10.0.0.1-254         |
 | Elk Server | No                  | 10.1.0.0-254         |
+
+---
 
 ### Elk Configuration
 
@@ -107,7 +112,7 @@ The following screenshot displays the result of running `docker ps` after succes
   <dd>ELK-SERVER: 10.1.0.4</dd>
 </dl>
 
-*Note: Upon opening these for the first time, make sure you run sudo RedAdmin@10.0.0.5 [5,6,7] or [10.1.0.4] to ensure connection. Say "YES" for allow.*
+:large_orange_diamond:*Note: Upon opening these for the first time, make sure you run sudo RedAdmin@10.0.0.5 [5,6,7] or [10.1.0.4] to ensure connection. Say "YES" for allow.*:large_orange_diamond:
 
 <dl>
   <dt>We have installed the following Beats on these machines:</dt>
@@ -126,7 +131,7 @@ SSH into the control node and follow the steps below:
 
 <dl>
   <dt>Q:  Which file is the playbook? Where do you copy it? </dt>
-  <dd>Ansible-playbook.yml is the playbook and can be found @ /etc/ansible. It is not found here: [Wrong Playbooks](Linux/wrong_playbooks.mp3) </dd>
+  <dd>Ansible-playbook.yml is the playbook and can be found @ /etc/ansible.</dd>
   <dt>Q:  Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? </dt>
   <dd>The specified machine checks the hosts file and the individual IP. This can be specified by choosing the correct machine which would be the ELK-Server with an IP of 10.2.0.4 and Nano'ing into the Ansible playbook. </dd>
   <dt>Q:  Which URL do you navigate to in order to check that the ELK server is running?</dt>
