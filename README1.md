@@ -1,6 +1,7 @@
 # Project-13
 Automated ELK Stack Deployment - Azure
-# [Spencer Tuttrup](Linux/wrong_playbooks.mp3)
+# [Spencer Tuttrup](Linux/wrong_playbooks.mp3) 
+<a href="www.stuttrup.com" title="Spencer Tuttrup">About Me</a>
 ## *Automated ELK Stack Deployment*
 
 The files in this repository were used to configure the network depicted below. The diagram lays out the process of the ELK configuration.
@@ -120,6 +121,8 @@ The following screenshot displays the result of running `docker ps` after succes
   <dt>These Beats allow us to collect the following information from each machine:</dt>
   <dd>FileBeat monitors the VM's systems and logs data such as when the files have changed around while Metricbeat collects metrics from the systems and various services</dd>
 </dl>
+
+---
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
